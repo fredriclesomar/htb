@@ -23,11 +23,7 @@ Impacket v0.9.23.dev1+20210504.123629.24a0ae6f - Copyright 2020 SecureAuth Corpo
 
 Password: #mssql_s3rV1c3!2020
 [*]Encryption required, switching to TLS
-[-] ERROR(PIVOTAPI\SQLEXPRESS): Line 1: Error de inicio de sesión. El inicio de sesión se realiza desde un dominio que no es de confianza y no se puede utilizar con autenticación integrada.
-                                                                                               
-┌──(root💀kali)-[~/impacket/examples]
-└─# 
-
+                                                       
 atau 
 =========================================================================
 https://raw.githubusercontent.com/fredriclesomar/htb/master/Pivotapi/upload_git.txt
