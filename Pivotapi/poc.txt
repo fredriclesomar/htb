@@ -22,7 +22,6 @@ drw-rw-rw-          0  Sun Aug  9 11:40:36 2020 ..
 Impacket v0.9.23.dev1+20210504.123629.24a0ae6f - Copyright 2020 SecureAuth Corporation
 
 Password: #mssql_s3rV1c3!2020
-[*]Encryption required, switching to TLS
                                                        
 atau 
 =========================================================================
